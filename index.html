@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Woods | Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap">
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Jeremy Woods</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#tools" class="navbar__links" id="tools-page">Tools</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+		<div class="hero__container">
+            <h1 class="hero__heading">
+                <span>Software</span>
+                <span>Engineer.</span>
+            </h1>
+            <div class="hero__img">
+                    <img src="/assets/Jeremy-Woods-Resume.jpg" alt="Portrait" class="hero__img">
+            </div>
+		</div>
+	</div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="about__container">
+            <h1>About</h1>
+            <p>Software Engineer with a passion for bringing creative visions to life with code.</p>
+            <div class="social__links--container">
+                <a class="social__links" href="https://github.com/jeremywoods" target="blank">
+                    <ion-icon class="social__logo" name="logo-github"></ion-icon>
+                </a>
+                <a class="social__links" href="https://www.linkedin.com/in/jeremy-woods-8893921a2/" target="blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tool Kit -->
+    <div class="toolkit" id="tools"> 
+        <h1>Toolbox</h1>
+        <div class="cards">
+            <div class = "card card1">
+                <div class="card__container">
+                    <img src="assets/html-logo.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class = "card card2">
+                <div class="card__container">
+                    <img src="assets/css-logo.png" alt="">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class = "card card3">
+                <div class="card__container">
+                    <img src="assets/js-logo.png" alt="">
+                    <h3>Javascript</h3>
+                </div>
+            </div>
+            <div class = "card card4">
+                <div class="card__container">
+                    <img src="assets/node-logo.png" alt="">
+                    <h3>Node/Express</h3>
+                </div>
+            </div>
+            <div class = "card card5">
+                <div class="card__container">
+                    <img src="assets/cplusplus-logo.png" alt="">
+                    <h3>C++</h3>
+                </div>
+            </div>
+            <div class = "card card6">
+                <div class="card__container">
+                    <img src="assets/csharp-logo.png" alt="">
+                    <h3>C#.NET</h3>
+                </div>
+            </div>
+            <div class = "card card7">
+                <div class="card__container">
+                    <img src="assets/java-logo.png" alt="">
+                    <h3>Java</h3>
+                </div>
+            </div>
+            <div class = "card card8">
+                <div class="card__container">
+                    <img src="assets/python-logo.png" alt="">
+                    <h3>Python</h3>
+                </div>
+            </div>
+            <div class = "card card9">
+                <div class="card__container">
+                    <img src="assets/sql-logo.png" alt="">
+                    <h3>SQL</h3>
+                </div>
+            </div>
+            <div class = "card card10">
+                <div class="card__container">
+                    <img src="assets/mongodb-logo2.png" alt="">
+                    <h3>MongoDB</h3>
+                </div>
+            </div>
+            <div class = "card card11">
+                <div class="card__container">
+                    <img src="assets/angular-logo.png" alt="">
+                    <h3>Angular</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="project__card--containers">
+            <h3>Question and Answer Website</h3>
+            <div class="project__card--content">
+                <img src="assets/question-and-answer.png" alt="Travlr Web page">
+                <p>A website where users can ask and answer questions with the ability to rate the quality of both the question and answer.
+                    Full-stack web app that was migrated to AWS.
+                </p>
+            </div>
+            <div class="project__button">
+                <button onclick="window.open('http://jeremy-woods-snhu-bucket.s3-website-us-east-1.amazonaws.com/','_blank')">Site</button>
+            </div>
+        </div>
+        <div class="project__card--containers">
+            <h3>Travlr</h3>
+            <div class="project__card--content">
+                <img src="assets/travlr-page.png" alt="Travlr Web page">
+                <p>A website where users are able to view and purchase various vacation packages. User authentication determines whether the users
+                    is a customer or an admin. Admins are able to manage the website by adding different vacation packages through a SPA passing JSON 
+                    data through MongoDB.
+                </p>
+            </div>
+            <div class="project__button">
+                <button onclick="window.open('https://github.com/jeremywoods/cs465-fullstack','_blank')">Code</button>
+            </div>
+        </div>
+        <div class="project__card--containers">
+            <h3>Gravioso Salvare</h3>
+            <div class="project__card--content">
+                <img src="assets/gravioso-salvare.PNG" alt="Travlr Web page">
+                <p>An application for an animal training company that takes data from local animal shelters and searches all animals for traits 
+                    that make them good candidates for rescue animal training. CRUD functionality is applied through the interface so animals can be 
+                    read, added, removed, or updated as needed. 
+                </p>
+            </div>
+            <div class="project__button">
+                <button onclick="window.open('https://github.com/jeremywoods/CS340-Journal','_blank')">Code</button>
+                <button onclick="window.open('https://www.youtube.com/watch?v=T1pZVcEFuBE&ab_channel=JeremyWoods','_blank')">Video</button>
+            </div>
+        </div>
+	</div>
+
+    <!-- footer -->
+    <div class="footer__container">
+        <h2>Jeremy Woods</h2>
+        <h3>JeremyWoods124@gmail.com</h3>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
