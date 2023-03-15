@@ -239,11 +239,41 @@
         text-align: center;
         margin: 0 auto;
         padding: 0px;
-        font-size: 87px;
+        font-size: 65px;
     }
 
     .hero__img {
-        width:450px; 
+        width:350px; 
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0px
+        
+    }
+ }
+
+.hero img {
+    border: 5px solid #fff;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 450px) {
+    .hero__container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__heading {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0px;
+        font-size: 55px;
+    }
+
+    .hero__img {
+        width:300px; 
         height: auto;
         text-align: center;
         margin: 0 auto;
@@ -298,6 +328,21 @@ ion-icon {
     color: #00875A;
 }
 
+@media screen and (max-width: 825px) {
+
+
+    .about__container h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .about__container h1 {
+        font-size: 60px;
+    }
+}
+
 /* toolkit */
 
 .toolkit {
@@ -344,11 +389,29 @@ ion-icon {
     .cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    .toolkit h1 {
+        font-size: 80px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .toolkit h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .toolkit h1 {
+        font-size: 54px;
     }
 }
 
@@ -381,9 +444,13 @@ ion-icon {
     height: 400px;
     width: 80%;
     text-align: center;
+    /*
     border: 3px solid #fff;
     border-radius: 4px;
-    padding: px;
+    */
+    outline: 3px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .project__card--containers h3{
@@ -432,18 +499,26 @@ ion-icon {
 
 @media screen and (max-width: 1200px) {
     .project__card--containers {
-        height: 600px;     
+        
     }
 
     .project__card--content {
         display: block;
     }
+
+    .projects h1 {
+        font-size: 80px;
+    }
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .project__card--containers {
-        height: 500px;     
+        height: 550px
+    }
+
+    .projects h1 {
+        font-size: 60px;
     }
 }
 

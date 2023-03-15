@@ -17,7 +17,7 @@ const highlightMenu = () => {
     const servicesMenu = document.querySelector('#tools-page');
     const projectsMenu = document.querySelector('#projects-page');
     let scrollPos = window.scrollY;
-    //console.log(scrollPos);
+    console.log(scrollPos);
   
     // adds 'highlight' class to my menu items
     if (window.innerWidth > 960 && scrollPos < 400) {
@@ -34,7 +34,7 @@ const highlightMenu = () => {
       aboutMenu.classList.remove('highlight');
       projectsMenu.classList.remove('highlight');
       return;
-    } else if (window.innerWidth > 960 && scrollPos < 2600) {
+    } else if (window.innerWidth > 960 && scrollPos < 3660) {
         projectsMenu.classList.add('highlight');
         servicesMenu.classList.remove('highlight');
         return;
