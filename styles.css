@@ -512,9 +512,9 @@ ion-icon {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
     .project__card--containers {
-        height: 550px
+        height: 600px
     }
 
     .projects h1 {
